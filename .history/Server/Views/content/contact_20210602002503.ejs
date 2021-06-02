@@ -30,27 +30,26 @@
         <div style="display:inline;"><input type="input" name="TextInput547" style="width:120px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969;"/></div>
       </div></div>
       <div style="padding-bottom:6px"><div name="HGroup616" style="width:180px;height:23px;">
-
       <!--E-mail-->
     <div style="display:inline;padding-right:2px"><label name="Label665" style="position:relative;vertical-align: middle;width:50px;height:12px;font-family:Arial;font-size:12px;display: inline-block;">E-mail: </label></div>
           <div style="display:inline;"><input type="input" name="TextInput554" style="width:120px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969;"/></div>
-
     <!--phone number-->
     <div style="display:inline;padding-right:2px"><label name="Label665" style="position:relative;vertical-align: middle;width:50px;height:12px;font-family:Arial;font-size:12px;display: inline-block;">Phone #:</label></div>
-          <div style="display:inline;"><input type="input" name="TextInput554" style="width:120px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969;"/><br /><br /></div>
+          <div style="display:inline;"><input type="input" name="TextInput554" style="width:120px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969;"/></div>
 
  
-    <!-- message-->
-    
-    <div style="display:inline;padding-right:2px"><label name="Label665" style="position:relative;vertical-align: middle;width:50px;height:12px;font-family:Arial;font-size:12px;display: inline-block;">Message:
+                        <!--User message-->
+                        <label id="lbMessage" class="medium-index form-label">Message:
                     </p>
                     <p>
-    <!--Textarea for User message-->
-    <textarea id="txtMessage" class="form-textArea" name="txtMessage" rows="7" cols="80" runat="server">Type your message here!</textarea>
-    </p>
-    
-    <!--Send Button-->
-    <p class="text-center">
-    <button type="button" runat="server" onserverclick="sendButton_click">Send</button>
-    </p>
-    
+                        <!--Textarea for User message-->
+                        <textarea id="txtMessage" class="form-textArea" name="txtMessage" rows="7" cols="80" runat="server">Type your message here!</textarea>
+                    </p>
+                    <br /><br />
+                        <!--Send Button-->
+                    <p class="text-center">
+                        <button type="button" runat="server" onserverclick="sendButton_click">Send</button>
+                    </p>
+                        <!--Result Label-->
+                    <p><asp:Label id="lbResult" runat="server" /></p>
+                    </form>
