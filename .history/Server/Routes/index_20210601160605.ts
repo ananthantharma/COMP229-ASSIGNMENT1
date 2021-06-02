@@ -1,9 +1,3 @@
-/* Student Name: Ananthan Tharmavelautham
-Student #:301175762
-Date: 06/02/2021
-File Name: COMP229 - Assignment 1 
-*/
-
 import express from 'express';
 const router = express.Router();
 export default router;
